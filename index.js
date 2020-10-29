@@ -22,6 +22,8 @@ app.delete("/spots/:id", require("./controllers/deleteSpot"));
 //routes get
 app.get("/amenities", require("./controllers/getAmenities"));
 app.get("/features", require("./controllers/getFeatures"));
+app.get("/products", require("./controllers/getProducts"));
+
 app.get("/auth", require("./controllers/Auth"));
 app.get("/cities", require("./controllers/getCities"));
 app.get("/eatins", require("./controllers/getEatins"));
