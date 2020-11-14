@@ -21,9 +21,14 @@ const Spots = mongoose.model("spots", {
     type: mongoose.Schema.Types.ObjectId,
     ref: "types",
   },
+
+  toggleFeatures: {
+    type: Boolean,
+    default: false,
+  },
   features: [
     {
-      type: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectsId,
       ref: "features",
     },
   ],
