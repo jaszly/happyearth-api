@@ -6,9 +6,9 @@ module.exports = (req, res) => {
     .populate("users eatins takeaways types features")
     .lean()
     .then((data) => {
-      // console.log("req.params.id", req.params.id);
+      console.log("req.params.id", req.params.id);
       res.send(data);
-      // console.log(data);
+      console.log(data);
     })
     .catch((err) => res.send(err));
 };
