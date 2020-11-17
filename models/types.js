@@ -1,14 +1,13 @@
-const mongoose = require('../database')
+const mongoose = require("../database");
 
-const Types = mongoose.model('types', {
-	name: {
-		type: String,
-		required: [true, 'Name is required.']
-	},
-	icon: {
-		type: String,
-		required: [true, 'Icon string is required.']
-	}
-})
+const Types = mongoose.model("types", {
+  name: {
+    type: String,
+    required: [true, "Name is required."],
+  },
+  about: {
+    type: String,
+  },
+});
 
-module.exports = Types
+module.exports = Types;
