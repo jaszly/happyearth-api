@@ -28,8 +28,12 @@ app.get("/cities", require("./controllers/getCities"));
 app.get("/eatins", require("./controllers/getEatins"));
 app.get("/spots/:id", require("./controllers/getSpot"));
 app.get("/spots", require("./controllers/getSpots"));
+app.get("/categories", require("./controllers/getCategories"));
+
 app.get("/takeaways", require("./controllers/getTakeaways"));
-app.get("/types", require("./controllers/getTypes"));
+app.get("/typesfood", require("./controllers/getTypesFood"));
+app.get("/typesshop", require("./controllers/getTypesShop"));
+app.get("/typesmisc", require("./controllers/getTypesMisc"));
 app.get("/users/:id", require("./controllers/getUser"));
 app.get("/users", require("./controllers/getUsers"));
 
