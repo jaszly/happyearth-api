@@ -8,6 +8,11 @@ const Types = mongoose.model("types", {
   about: {
     type: String,
   },
+  categories: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "categories",
+    required: [true, "category is required."],
+  },
 });
 
 module.exports = Types;
