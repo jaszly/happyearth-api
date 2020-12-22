@@ -3,7 +3,7 @@ const Spots = require("../models/spots");
 
 module.exports = (req, res) => {
   Spots.find(req.query)
-    // .populate('types')
+    // .populate("types")
     .then((spots) => {
       spots.map((spot) => {
         spot.image = spot.images[0];
