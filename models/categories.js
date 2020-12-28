@@ -13,6 +13,9 @@ const Categories = mongoose.model("categories", {
   about: {
     type: String,
   },
+  image: {
+    type: String,
+  },
 });
 
 module.exports = Categories;
