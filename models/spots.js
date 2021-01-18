@@ -49,6 +49,7 @@ const Spots = mongoose.model("spots", {
       ref: "eatins",
     },
   ],
+
   toggleTakeaways: {
     type: Boolean,
     default: false,
@@ -59,6 +60,29 @@ const Spots = mongoose.model("spots", {
       ref: "takeaways",
     },
   ],
+
+  toggleDiets: {
+    type: Boolean,
+    default: false,
+  },
+  diets: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "diets",
+    },
+  ],
+
+  toggleEthics: {
+    type: Boolean,
+    default: false,
+  },
+  ethics: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "ethics",
+    },
+  ],
+
   city: {
     type: String,
     required: [true, "City is required."],
