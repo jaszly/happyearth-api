@@ -24,6 +24,7 @@ app.get("/amenities", require("./controllers/getAmenities"));
 app.get("/features", require("./controllers/getFeatures"));
 app.get("/products", require("./controllers/getProducts"));
 app.get("/diets", require("./controllers/getDiets"));
+app.get("/ethics", require("./controllers/getEthics"));
 
 app.get("/auth", require("./controllers/Auth"));
 app.get("/cities", require("./controllers/getCities"));
