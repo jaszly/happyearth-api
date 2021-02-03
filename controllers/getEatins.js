@@ -4,11 +4,11 @@ module.exports = (req, res) => {
   Eatins.find({})
     .sort({ name: 1 })
     .then((data) => {
-      // console.log("works");
+      console.log("works");
       res.send(data);
     })
     .catch((err) => {
-      console.log("no");
+      console.log("no work");
       res.send(err);
     });
 };
