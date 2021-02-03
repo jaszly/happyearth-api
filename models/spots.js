@@ -28,16 +28,16 @@ const Spots = mongoose.model("spots", {
       ref: "features",
     },
   ],
-  toggleProducts: {
-    type: Boolean,
-    default: false,
-  },
-  products: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "products",
-    },
-  ],
+  // toggleProducts: {
+  //   type: Boolean,
+  //   default: false,
+  // },
+  // products: [
+  //   {
+  //     type: mongoose.Schema.Types.ObjectId,
+  //     ref: "products",
+  //   },
+  // ],
 
   toggleEatins: {
     type: Boolean,
@@ -94,11 +94,11 @@ const Spots = mongoose.model("spots", {
   center: {
     lng: {
       type: Number,
-      required: true,
+      required: false,
     },
     lat: {
       type: Number,
-      required: true,
+      required: false,
     },
   },
 });
