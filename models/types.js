@@ -10,6 +10,7 @@ const Types = mongoose.model("types", {
     ref: "categories",
   },
   categoryname: {
+    type: String,
     required: [true, "category name required."],
   },
 });
