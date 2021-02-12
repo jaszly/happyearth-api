@@ -5,13 +5,12 @@ const Types = mongoose.model("types", {
     type: String,
     required: [true, "Name is required."],
   },
-  about: {
-    type: String,
-  },
-  categories: {
+  category: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "categories",
-    required: [true, "category is required."],
+  },
+  categoryname: {
+    required: [true, "category name required."],
   },
 });
 
