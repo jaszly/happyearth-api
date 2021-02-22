@@ -2,13 +2,11 @@ const Eatins = require("../models/eatins");
 
 module.exports = (req, res) => {
   Eatins.find({})
-    .sort({ name: 1 })
+    .sort({ explanation: 1 })
     .then((data) => {
-      console.log("works");
       res.send(data);
     })
     .catch((err) => {
-      console.log("no work");
       res.send(err);
     });
 };
