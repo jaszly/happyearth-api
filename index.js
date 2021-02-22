@@ -35,6 +35,7 @@ app.get("/categories", require("./controllers/getCategories"));
 
 app.get("/takeaways", require("./controllers/getTakeaways"));
 app.get("/typesfood", require("./controllers/getTypesFood"));
+app.get("/typesstore", require("./controllers/getTypesStore"));
 app.get("/typesshop", require("./controllers/getTypesShop"));
 app.get("/typesmisc", require("./controllers/getTypesMisc"));
 app.get("/users/:id", require("./controllers/getUser"));
