@@ -21,13 +21,16 @@ const Spots = mongoose.model("spots", {
     type: mongoose.Schema.Types.ObjectId,
     ref: "types",
   },
-
-  features: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "features",
-    },
-  ],
+  spotTypes: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "types",
+  },
+  // features: [
+  //   {
+  //     type: mongoose.Schema.Types.ObjectId,
+  //     ref: "features",
+  //   },
+  // ],
   // toggleProducts: {
   //   type: Boolean,
   //   default: false,
@@ -86,6 +89,10 @@ const Spots = mongoose.model("spots", {
   city: {
     type: String,
     required: [true, "City is required."],
+  },
+  neighborhood: {
+    type: String,
+    required: false,
   },
   country: {
     type: String,
